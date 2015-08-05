@@ -1,0 +1,12 @@
+digital: the word _____ implies that the information in the computer is represented by variables that take a limited number of discrete values 17
+bit: A binary digit is called a ___ 17
+program: a sequence of instructions for the computer 18
+CPU RAM IOP: the hardware of the computer is usually divided into three major parts: 18
+computer organization: ____ ____ is concerned with the way the hardware components operate and the way they are connected together to form the computer system 19
+computer design: ____ ____ is concerned with the hardware design of the computer 19
+computer architecture: ___ ____ is concerned with the structure and behavior of the computer as seen by the user 19
+signals: binary information is represented in digital computers by physical quantities called _____ 20
+voltages: electrical signals such as _____ exist throught the computer system in either one of two recognizable states, 1 or 0. 20
+gates: the manipulation of binary information is done by logic circuits called ____ 20
+gates: ____ are blocks of hardware that produce signals of binary 1 or 0 when input logic requirements are satisfied
+truth table: the input-output relationship of the binary variables for each gate can be represented in tabular form by a ____ ____ 20

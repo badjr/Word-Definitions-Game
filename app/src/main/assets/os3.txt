@@ -1,0 +1,72 @@
+batch processing: the execution of a series of programs (jobs) on a computer without manual intervention
+kernel: a computer program that manages input/output requests from software and translates them into data processing instructions for the central processing unit and other electronic components of a computer.
+process: a program in execution 105
+jobs: a batch system executes ____ 105
+tasks: a time-shared system has user programs, or ____. 106
+interchangeably: job and process are used interchangeably in this text. 106
+text section: a process contains the program code, which is sometimes known as the ____ ____. 106
+program counter: a process includes the current activity, which is represented by the value of the ____ ____. 106
+stack: a process includes a ____, which contains temporary data (such as functino parameters, return addresses, and local variables). 106
+data section: a process includes a ____ ____, which contains global variables. 106
+heap: a process includes a ____, which is memory that is dynamically allocated during process run time. 106
+passive: a program is a ____ entity, such as a file containing a list of instructinos stored on disk (often called an executable file). 106
+active: a process is an ____ entity, with a program counter specifying the next instruction to execute and a set of aassociated resources. 106
+state: the ____ of a process is the current activity of that process. 107
+new: in the ____ state, a process is being created. 107
+running: in the ____ state, instructions are being executed. 107
+waiting: in the ____ state, a process is waiting for some event to occur (such as an I/O completion of receptino of a signal). 107
+ready: in the ____ state, a process is waiting to be assigned to a processor. 107
+terminated: in the ____ state, the process has finished execution. 107
+T: T/F, only one process can be running on any processor at any instant. 107
+T: T/F, many processes may be ready and waiting at any instant. 107
+thread: a ____ is a single stream of instructions being executed. 109
+parallel: on multicore systems, multiple threads can run in ____. 109
+T: T/F, the objective of multiprogramming is to have some process running at all times, to maximize CPU utilization. 110
+process scheduler: a ____ ____ selects an available process (possibly from a set of several available processes) for program execution on the CPU. 111
+job queue: as processes enter the system, they are put into a ____ ____, which consists of all processes in the system. 111
+ready queue: the processes that are residing in main memory and are ready and waiting to execute are kept on a list called the ____ ____. 111
+device queue: the list of processes waiting for a particular I/O device is called a ____ ____. 111
+dispatched: a new process is initially put in the ready queue and waits there until it is selected for execution, or ____. 112
+scheduler: the selection of certain processes to be executed from queues in a certain fashion is carried out by a ____. 112
+job scheduler: also known as a long-term scheduler, selects processes from a pool stored on a mass-storage device (typically a disk), and loads them into memory for execution. 112
+CPU scheduler: also known as the short-term scheduler, selects from among the processes that are ready to execute and allocates the CPU to one of them. 113
+degree of multiprogramming: the long-term scheduler controls this, which is the number of processes in memory. 113
+I/O-bound process: a process that spends more of its time doing I/O than it spends doing computations. 113
+CPU-bound process: a process that spends more of its time doing computations than it spends doing I/O. 113
+medium-term scheduler: a scheduler that removes a process from memory (and from active contention for the CPU) and this reduce the degree of multiprogramming, and later, the process can be reintroduced into memory, and its execution can be continued where it left off. 113
+swapping: when a process is removed from memory and later reintroduced into memory and its execution is continued where it is left off. 113
+context: the ____ includes the value of the CPU registers, the process state, and memory-management information. 114
+context switch: switching the CPU to another process by performing a state save of the current process and a state restore of a different process. 114
+ps -el: we use this command on UNIX and Linux systems to obtain a listing of processes. 116
+cascading termination: when a process terminates and all of its children are also terminated. 121
+zombie: a process that has terminated, but whose parent has not yet called wait(). 121
+orphan: if a parent does not invoke wait() and instead terminated, its child processes become ____. 121
+independent: ____ processes cannot affect or be affected by other processes executing in the system, and they do not share data. 122
+cooperating: ____ processes can affect or be affected by other processes executing in the system, and they share data. 122
+modularity: one of the reasons for providing an environment that allows process cooperation is ____, which is the degree to which a system's components may be separated and recombined. 122
+interprocess communication: mechanism that allows processes to exchange data/information. 122
+shared memory: one of the fundamental models of interprocess communication in which a region of memory that is shared by cooperating processes is established. 122
+message passing: one of the fundamental models of interprocess communication in which communication takes place by means of messages exchanged between cooperating processes. 122
+synchronization: coordination. 125
+message passing: provides a mechanism to allow processes to communicate and to synchronize their actions without sharing the same address space. 126
+direct communication: in ____ ____, each process that wants to communicate must explicity name the recipient or sender of the communication with send(P, message) and receive(Q, message). 127
+symmetry: in the ____ addressing scheme, both the sender process and the receiver process must name the other to communicate. 127
+asymmetry: in the ____ addressing scheme, only the sender names the recipient; the recipient is not required to name the sender. send(P, message) and receive(id, message). 127
+indirect communication: in ____ ____, process' messages are sent to and received from mailboxes, or ports. send(A, message) and receive(A, message) where A is the mailbox. two processes can communicate only if they have a shared mailbox. 128
+blocking nonblocking: message passing may be either ____ or ____, also known as synchronous and asynchronous. 129
+blocking send: in ____ ____, the sending process is blocked until the message is received by the receiving process or by the mailbox. 129
+nonblocking send: in ____ ____, the sending process sends the message and resumes operation. 129
+blocking receive: in ____ ____, the receiver blocks until a message is available. 129
+nonblocking receive: in ____ ____, the receiver retrieves either a valid message or a null. 129
+rendezvous: when both send() and receive() are blocking, we have a ____ between the sender and receiver. this word means a meeting at an agreed time and place, typically between two people. 129
+T: T/F, the solution to the producer-consumer problem becomes trivial when we use blocking send() and receive(). 129
+T: T/F, there are 3 other strategies for communication in client-server systems besides shared memory and message passing; sockets, remote procedure calls (RPCs), and pipes. 136
+socket: an endpoint for communication, and an endpoint is a combinatino of an IP address and a port number. 136
+loopback: the ip address 127.0.0.1 is known as the ____. 138
+low level: communication using sockets--althought common and efficient--is considered a ____ ____ form of communication between distributed processes because it allows only an unstructured stream of bytes to be exchanged. 138
+port: in RPC (remote procedure calls), a ____ is simply a number included at the start of a message packet. 139
+big-endian: these systems store the most significant byte first. 140
+little-endian: these systems store the least significant byte first. 140
+pipe: a conduit allowing two processes to communicate, where a conduit is a channel for conveying water or other fluid. 142
+ordinary pipe: ____ ____ allow two processes to communicate in standard producer-consumer fashion; the producer write to one end of the pipe (the write-end) and the consumer reads from the other end (the read-end). Thus, they are unidirectional, allowing only one-way communication. 142
+T: T/F, typically, a parent process creates a pipe and uses it to communicate with a child process that it creates via fork(). 143

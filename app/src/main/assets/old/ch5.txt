@@ -1,0 +1,23 @@
+RTL: ____ is register transfer language
+Read; DR <- M[AR]: The read operation can be stated as ____. This causes a transfer of information into DR from the memory word M selected by the address in AR. 113
+PC: the register for the program counter is called ____. 107
+IR: the register for the instruction register is called ____. 107
+R1: the register for the processor register is called ____. 107
+AR: a memory unit that receives thea address from a register, called the address register, is symbolized by ____. 113
+DR: the data from the address register (AR) are transferred to another register, called the data register, symbolized by ____. 113
+program: a ____ is a set of instructions that specify the operations, operands, and the sequence by which processing has to occur. 134
+instruction: a computer ____ is a binary code that specifies a sequence of microoperations for the computer. Instruction codes together with data are stored in memory. 135
+instruction code: a ____ is a group of bits that instruct the computer to perform a specific operation. 135
+operation code: the ____ of an instruction is a group of bits that define such operations as add, subtract, multiply, shift, and complement. 135
+macrooperation: For every operation code, the control issues a sequence of microoperations needed for the hardware implementation of the specified operation. For this reason, an operation code is sometimes called a ____ because it specifies a set of microoperations. 135
+opcode: the ____, usually specified with four bits, specifies one out of 16 possible operations. 136
+accumulator (AC): computers that have a single-processor register usually assign to it the name ____ and label it ____. 137 
+operand: it is sometimes convenient to use the address bits of an instruction code not as an address but as the actual operand. 137
+immediate operand: when the second part of an instruction code specifies an operand, the instruction is said to have a ____. 137
+direct address: when the second part of an instruction code specifies the address of an operand, the instruction is said to have a ____. 137
+indirect address: when the second part of an instruction code specifies an addresss of a memory word in which the address of the operand is found, it is said to have a ____. 137
+DR: the ____ register holds the operand read from memory. 139
+AC: the ____ register is a general-purpose processing register. 139
+IR: the ____ register holds the instruction read from memory. 139
+TR: the ____ register holds temporary data during the processing. 139
+AR: Any register can receive the data from memory after a read operation except AC. 142

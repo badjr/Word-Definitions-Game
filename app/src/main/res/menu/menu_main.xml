@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+      <item android:id="@+id/file_selection"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:title="@string/selectFileText"/>
+        <item android:id="@+id/game_mode"
+              android:orderInCategory="101"
+              app:showAsAction="never"
+              android:title="@string/gameModeText"/>
+</menu>

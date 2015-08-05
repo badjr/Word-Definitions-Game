@@ -1,0 +1,7 @@
+throughput: real-time operating systems can make it hard to get good ____. 3
+response: embedded system designers must deal with two separate problems... throughput and ____---and the techniques for dealing with the two are not at all the same. In fact, dealing with one of these problems often tends to make the other one worse. 4
+testing: ____ is difficult with embedded systems, because the setup may be perfect in the lab, but not so in the real world. 4
+microprocessor: an embedded system needs a ____ to operate. 8
+memory: an embedded system needs ____ for two purposes; to store its program and to store its data. 9
+memory: an embedded system needs a special kind of ____ that will remember the program, even with no power. 10
+serial port: embedded systems very often have a standard ____, a network interface, and hardware to interact with sensors and activators on equipment that the system is controlling. 10

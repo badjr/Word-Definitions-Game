@@ -1,0 +1,36 @@
+chips: most digital electronic circuits today are built with semiconductor parts called ____ that are purchased from manufacturers specializing in building such parts. 13
+packages: chips (semiconductors) are encased in small, thin, square/rectangular ____ made of plastic/ceramics. 14
+pins: to attach a chip (semiconductor) to the outside world, each package has a collection of ____, stiff metallic legs that protrude from the sides of the package. 14
+data sheets: chip manufacturers provide information about each of their products in documents called ____. 14
+board: the most common mechanism to connect chips to one another is a ____. 14
+ground: 0 volts is sometimes called ____ or low. 15
+high: 3 volts or 5 volts, sometimes called VCC (Voltage Connected to Collector) or ____. 15
+T: T/F, there is a very short transition time from high/low voltage and vice versa. 15
+asserted: signals are said to be ____ when they are signaling whatever it is that they signal. 15
+drive: the part of a chip whose output controls the voltage on a given signal is said to ____ the signal. 16
+floating: if no part on the circuit is driving a signal, then that signal is said to be ____. 16
+bus fight: if one part tries to drive a signal high and another tries to drive a signal low, it is called a ____ ____. 16
+gate: a very simple part built from just a handful of semiconductor transistors is called a ____, or sometimes a discrete. 16
+drive: a ____r is a device that ____s its output signal to match its input signal. 19
+power pin: each chip in every circuit has a ____ ____ (sometimes called a VCC pin), which must be connected to a signal that is always high. 20
+ground pin: each chip in every circuit has a ____ ____, which must be connected to a signal that is always low. 20
+capacitor: a device that stores a small amount of electricity, like a miniscule rechargeable battery. 21
+open collector output: a special class of outputs, this allows you to attach the outputs of several devices together to drive a single signal. 21
+tri state: ____ ____ devices are useful when you want to allow more than one device to drive the same signal. 23
+input float: A tri-state driver works like this; when the select signal is asserted, then the tri-state driver output will be the same as the ____; when the select signal is not asserted, the output on the tri-state driver will ____. 23
+pullup: a resistor with one end connected to VCC and the other end connected to a signal is called a ____ resistor. 25
+pulldown: a resistor with one end connected to ground and the other end connected to a signal is called a ____ resistor. 26
+bus fights: Unlike open-collector devices, tri-state devices can and will have ____ ____ if one of them tries to drive a signal low and another tries simultaneously to drive that signal high. 26
+register: a d flip-flop is sometimes called a ____. 29
+d flip flop: this is known as a "data" or "delay" flip flop. (wiki)
+low high: the Q output on the D flip flop takes on the value of the D input at the time that the CLK input transitions from ____ to ____, that is, at the CLK signal's rising edge. 29
+edge: the transition of the signals from high to low and vice versa. 29
+clock: most circuits have a signal called the ____, to keep executing instructions even if nothing changes in the outside world. The purpose of this signal is to provide rising and falling edges to make other prts of the circuit do their jobs. 32
+ROM: a microprocessor can read the program instructions from a ____ quickly, typically as fast as the microprocessor can run the program. 33
+nonvolatile: ROM data is ____, meaning it remembers the data even if the power is turned off. 33
+T: T/F, most embedded systems do not have a disk drive or other storage medium. 33
+address signals: Typically, you will find pins labeled A0 to An called ____ ____ on ROMS, which indicate the address from which the processor wants to read. 34
+data signals: Typically, you will find pins labeled D0 to Dn called ____ ____ on ROMs, which are used to drive signals. 34
+flash: the most typical use of ____ memory is to store a program or rarely changed configuration data such as an IP address or the dat on which the product should next be serviced and the diagnostic programs run. 37
+EEROM: ____ is useless for storing a program, because it can store very little data, often less than 1 K or so. It is used instead to store configuration information that might change relatively frequently but that the system should recover on power-up. 38
+RAM: ____ memory is used to store data that needs to be read and written quickly. It is volatile memory. 40

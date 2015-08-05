@@ -1,0 +1,3 @@
+entity objects: ____ ____ represent the persistent information tracked by the system. 177
+boundary objects: ____ ____ represent the interactions between the actors and the system. 177
+control objects: ____ ____ are in charge of realizing use cases. 177

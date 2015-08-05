@@ -1,0 +1,30 @@
+batch system: an operating system executes a variety of programs, one which can be called a ____ ____, or job. 4
+time shared system: an operating system executes a variety of programs, one which can be called a ____ ____ ____, or user programs or tasks. 4
+process: the terms job and ____ are used almost interchangeably. 4
+process: a program in execution in sequential fashion. 4
+heap: a process contains multiple parts including a text section, program counter, stack, data section, and heap. 4
+passive: a program is a ____ entity stored on disk. 5
+active: a process is an ____ entity. 5
+memory: a program becomes a process when the executable file is loaded into memory. 5
+T: T/F, one program can be several processes 5
+new: in this state, the process is being created. 7
+running: in this state, the instructions are being executed by the process. 7
+waiting: in this state, the process is waiting for some event to occur. 7
+ready: in this state, the process is waiting to be assigned to a processor. 7
+terminated: in this state, the process has finished execution. 7
+short: a ____ term scheduler selects which process should be executed next and allocates CPU. 16
+long: a ____ term scheduler selects which processes should be brought into the ready queue. 16
+medium: a ____ term scheduler can be added if degree of multiple programming needs to decrease. 16
+cascading: when a process terminates, then all its children, grandchildren are also terminated. this is called ____ termination. 27
+zombie: a process that has terminated, but whose parent has not yet called wait() b121
+orphan: a process? whose parent did not invoke wait() and instead terminated b121
+interprocess communication: cooperating processes need ____ ____ (IPC). 29
+port: in indirect communication, messages are directed and received from mailboxes, also known as ____s. 41
+blocking: message passing may be either blocking or non-blocking. ____ is considered synchronous. 44
+non-blocking: message passing may be either blocking or non-blocking. ____ is considered asynchronous. 44
+blocking send: in ____ ____, the sender is blocked until the message is received. 44
+blocking receive: in ____ ____, the receiver is blocked until a message is available. 44
+non-blocking send: in ____ ____, the sender sends the message and continues. 44
+non-blocking receive: in ____ ____, the receiver receives a valid message or a null message. 44
+socket: a ____ is defined as an endpoint for communication. 54
+pipe: acts as a conduit allowing two processes to communicate. 60

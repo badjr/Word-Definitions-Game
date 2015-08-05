@@ -1,0 +1,40 @@
+control word: The control unit initiates a series of sequential steps of microoperations. During any given time, certain microoperations are to be initiated, while others remain idle. The control variables at any given time can be represented by a string of 1's and 0's, called a ____ ____. 223
+microinstruction: each word in control memory contains within it a ____. It specifies one or more microoperations for the system. 224
+microprogram: A sequence of microinstructions consitutes a ____. 224
+dynamic: a more advanced development known as ____ microprogramming permits a microprogram to be loaded initially from an auxiliary memory such as a magnetic disk. 224
+control memory: Control units that use dynamic microprogramming employ a writable control memory. This type of memory can be used for writing (to change the microprogram) but is used mostly for reading. A memory that is part of a control unit is referred to as a ____ ____. 224
+control address register: the ____ ____ ____ specifies the address of the microinstruction, and the control data register holds the microinstruction read from memory. 225
+sequencer: the next address generator is sometimes called a microprogram ____, as it determines the address sequence that is read from control memory. 225
+pipeline register: the control data register holds the present microinstruction while the next address is computed and read from memory. The data register is sometimes called a ____ ____. It allows the execution of the microoperations specified by the control word simultaneously with the generation of the next microinstruction. 225
+hardwired control: most computers based on the reduced instruction set computer (RISC) architecture concept use hardwired control rather than a control memory with a microprogram. 226
+routine: microinstructions are stored in control memory in groups, with each group specifying a ____. 226
+mapping: the transformation from the instruction code bits to an address in control memory where the routine is located is referred to as a ____ process. 226
+PLD: the mapping function is sometimes implemented by means of an integrated circuit called programmable logic device or ____. 230
+SBR: subroutine register is abbreviated ____. 230
+program counter: PC is the abbreviation for ____ ____, one of the processor registers. 231
+address register: AR is the abbreviation for ____ ____, one of the processor registers. 231
+data register: DR is the abbreviation for ____ ____, one of the processor registers. 231
+accumulator register: AC is the abbreviation for ____ ____, one of the processor registers. 231
+PC: processor register, one of the processor registers, is abbreviated ____. 231
+AR: address register, one of the processor registers, is abbreviated ____. 231
+DR: data register, one of the processor registers, is abbreviated ____. 231
+AC: accumulator register, one of the processor registers, is abbreviated ____. 231
+EA: effective address is abbreviated ____. 232
+microoperation fields: F1, F2, and F3 in the microinstruction code format are the ____ ____s. 233
+condition for branching: CD in the microinstruction code format is the ____ ____ ____. 233
+branch field: BR in the microinstruction code format is the ____ ____. 233
+address field: AD in the microinstruction code format is the ____ ____. 233
+CD: condition for branching in the microinstruction code format is abbreviated ____. 233
+BR: branch field in the microinstruction code format is abbreviated ____. 233
+AD: address field in the microinstruction code format is abbreviated ____. 233
+microoperations: the three fields F1, F2, and F3 specify ____ for the computer. 232
+CD: the ____ field selects status bit conditions. 233
+BR: the ____ field specifies the type of branch to be used. 233
+AD: the ____ field contains a branch address. 233
+microinstruction: each line of the assembly language microprogram defines a symbolic ____. 235
+five: each symbolic microinstruction is divided in to ____ fields; label, microoperations, CD, BR, and AD. 235
+label: the ____ field may be empty or it may specify a symbolic address. A label is terminated with a colon (;). 235
+microoperations: the ____ field consists of one, two, or three symbols, separated by commas, from those defined in table 7-1. There may be no more than one symbol from each F field. The NOP symbol is used when the microinstruction has no microoperations. This will be translated by the assembler to nine zeros. 235
+CD: the ____ field has one of the letters U, I, S, or Z. 236
+BR: the ____ field contains one of the four symbols defined in Table 7-1. 236
+AD: the ____ field specifies a value for the address field of the microinstruction in one of three possible ways; a. a symbolic address, which must also appear as a label. b. the symbol NEXT, to designate the next address in sequence. c. when the BR field contains a RET or MAP symbol, the AD field is left empty and is converted to seven zeros by the assembler. 236

@@ -1,0 +1,56 @@
+thread: the fundamental unit of CPU utilization. 163
+thread: a basic unit of CPU utilization. 163
+thread: a flow of control within a process. 191
+T: T/F, a thread consists of a thread ID, a program counter, a register set, and a stack. 163
+process: a thread shares with other threads belonging to the same ____ its same code section, data section, and other oeprating-system resources, such as open files and signals. 163
+T: T/F, a traditional (or heavyweight) process has a single thread of control. If a process has multiple threads of control, it can perform more than one task at a time. 163
+multithreaded: an execution model that allows multiple threads to exist within the context of a single process. 163 (wiki)
+multiple: process creation is time consuming and resource intensive, so it's more efficient to use one process that contains _____ threads for performing the same tasks over and over again. 164
+responsiveness: one of the four benefits of multithreaded programming. multithreading an interactive application may allow a program to continue running even if part of it is blocked or is performing a lengthy operation, therby increasing ____ to the user. 165
+resource sharing: one of the four benefits of multithreaded programming. processes can only share resources through techniques like shared memory and message passing, which must be explicity arranged by the programmer. But threads share memory and resources of the process to which they belong by default. 165
+economy: one of the four benefits of multithreaded programming. allocating memory and resources for process creation is costly. Because threads share the resources of the parent process to which they belong, it's more ____ to create and context-switch threads. 165
+scalability: one of the four benefits of multithreaded programming. in a multiprocessor architecture, threads may be running in parallel on different processing cores. 165
+multicore system: a system in which multiple cores appear across CPU chips or within CPU chips. 166
+multiprocessor system: a system in which multiple cores appear across CPU chips or within CPU chips. 166
+T: T/F, on a system with a single computing core, concurrency means that the execution of the threads will be interleaved over time, because the processing core is capable of executing only one thread at a time. 166
+T: T/F, on a system with multiple cores, concurrency means that the threads can run in parallel, because the system can assign a separate thread to each core. 166
+parallel: performing more than one task simultaneously. 166
+concurrent: performing more than one task by allowing all the tasks to make progress. 166
+T: T/F, you can have concurrency without paralellism. 166
+indentifying tasks: one of the five challenges of programming for multicore systems. examining applications to find areas that can be divided into separate, concurrent tasks. indeally, tasks are independent and can run in parallel on individual cores. 168
+balance: one of the five challenges of programming for multicore systems. while identifying tasks that can run in parallel, programmers must also ensure that tasks perform equal work of equal value. 168
+data splitting: one of the five challenges of programming for multicore systems. just as applications are divided into separate tasks, the data accesses and manipulated by the tasks must be divided to run on separate cores. 168
+data dependency: one of the five challenges of programming for multicore systems. the data accessed by the tasks must be examined for dependencies between two or more tasks. When one task depends on data from another, programmers must ensure that the execution of the tasks is synchronized to accommodate the data dependency. 168
+testing and debugging: one of the five challenges of programming for multicore systems. when a program is running in parallel on multiple cores, many execution paths are possible, which make debugging concurrent programs more difficult than single-threaded applications. 168
+data parallelism: in this type of parallelism, subsets of the same data are distributed across multiple computing cores and the same operation is performed on each core. (consider summing an array, each thread summing a chunk in parallel on separate computing cores). 168
+task parallelism: in this type of parallelism, tasks (threads) are distributed across multiple computing cores, and each thread is performing a UNIQUE operation. different threads may be operating on the same data, or they may be operating on different data. (consider the example of two threads each performing a unique statistical operation on the same array of elements. They're operating in parallel on separate computing cores, but each is performing a unique operation) 168
+user: ____ threads are supported above the kernel and are managed without kernel support. 169
+kernel: ____ threads are supported and managed directly by the operating system. 169
+many to one model: this model maps many user-level threads to one kernel thread. there is no parallelism in this model. 169
+one to one model: this model maps each user thread to a kernel thread. there is parallelism in this model. 170
+many to many model: this model multiplexes many user-level threads to a smaller or equal number of kernel threads. there is parallelism in this model. 170
+two level model: this model multiplexes many user-level threads to a smaller or equal number of kernel threads but also allows a user-level thread to be bound to a kernel thread. there is parallelism in this model. 170
+asynchronous threading: in this type of threading, when the parent creates a child thread, the parent resumes its execution, so that the parent and child execute concurrently. Each thread runs independently of every other thread, and the parent thread need not know when its child terminates. Because the threads are independent, there is typically little data sharing between threads. 172
+syncrhonous threading: in this type of threading, when the parent creates one or more children, it must wait for all of its children to terminate before it resumes (fork-join strategy). Typically, this type of threading involves significant data sharing among threads, e.g. the parent thread may combine the results calculated by its various children. 172
+Pthreads: the POSIX standard defining an API for thread creation and synchronization. 172
+Runnable: there are two techniques for creating threads in a Java program. One is extending the Thread class and overriding the run() method, and the alternative--and more commonly used--technique is to define a class that implements the ____ interface. 176
+implicit threading: the transfer of the creation and management of threading from application developers to compulers and run-time libraries. 179
+thread pool: when a number of threads are created at process startup and are placed in a ____, where they sit and wait for work. 179
+OpenMP: a set of compiler directives as well as an API for programs written in C, C++, or FORTRAN that provides support for parallel programming in shared-memory environments. 181
+fork: some UNIX systems have two versions of fork(), one that duplicates all threads, and another that duplicates only the thread that invoked the fork() system call. 183
+signal: a ____ is used in UNIX systems to notify a process that a particular event has occurred. 183
+synchronous signal: this signal is delivered to the same process that performed the operation that caused the signal. 184
+asynchronous: this signal is generated by an event external to a running process. (typically, this kind of signal is sent to another process) 184
+default signal handler: every signal has a ____ ____ ____ that the kernel runs when handling that signal. 184
+user-defined signal handler: the default action can be overridden by a ____ ____ ____ ____ that is called to handle the signal. 184
+asynchronous procedure call: this facility enables a user thread to specify a function that is to be called when the user thread receives notification of a particular event. 185
+thread cancellation: involves terminating a thread before it has completed. 185
+target thread: a thread that is to be canceled is often referred to as this. 185
+asynchronous cancellation: one of the ways a target thread may be cancelled. one thread immediately terminates the target thread. 185
+deferred cancellation: one of the ways a target thread may be cancelled. the target thread periodically checks whether it should terminate, allowing it an opportunity to terminate itself in an orderly fashion. 185
+thread-local storage: storage in which each thread has its own copy of certain data. 187
+context: the register set, stacks, and private storage area are known as the ____ of the thread. 189
+clone(): Linux creates new threads using the ____ system call. 189
+T: T/F, Linux does not distinguish between processes and threads. It uses the term task rather than process or thread when referring to a flow of control within a program. 189
+T: T/F, when clone() is called with the flags to share the same file system information, memory, signal handlers, and set of open files, it's similar to creating a thread since the parent task shares most of its resources with its child task. 190
+T: T/F, when clone() is called with no flags to share the same file system information, memory, signal handlers, and set of open files, it's similar to creating a process with fork(). 190

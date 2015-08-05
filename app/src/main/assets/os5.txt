@@ -1,0 +1,33 @@
+synchronization: coordination. 125
+cooperating process: a process that can affect or be affected by other processes executing in a computer system. 203
+T: T/F, cooperating processes can either directly share a logical address space or be allowed to share data only through files or messages. 203
+race condition: a situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place. 205
+one: To guard against a race condition, we need to ensure that only ____ process can manipulate some shared variable. 205
+synchronization: cooperating processes need ____ and coordination. 206
+coordination: cooperating processes need synchronization and ____. 206
+critical section: a segment of code in which a process may be changing common variables, updating a table, writing a file, and while the process is executing in this section, no other process is allowed to execute in it. 206
+critical section problem: to design a protocol that processes can use to cooperate. 206
+mutual exclusion: one of the three requirements that solves the critical-section problem. If process P_i is executing in its critical section, then no other processes can be executing in their critical sections. 206
+progress: one of the three requirements that solves the critical-section problem. If no process is executing in its critical section and some processes wish to enter their critical sections, then only those processes that are not executing in their remainder sections can participate in deciding which will enter its critical section next, and this selection cannot be postponed indefinitely. 206
+bounded waiting: one of the three requirements that solves the critical-section problem. There exists a limit on the number of times that other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted. 206
+preemptive kernel: this kind of kernel allows a process to be preempted while it is running in kernel mode. 207
+nonpreemptive kernel: this kind of kernel does not allow a process running in kernel mode to be preempted. 207
+Peterson's solution: a software-based solution to the critical-section problem that uses a flag and a turn variable. 208
+locking: protecting critical regions through the use of locks. 209
+atomically: many modern computer systems provide special hardware instructions that allow us either to test and modify the content of a word or to swap the contents of two words ____, that is, as one uniterruptible unit. 210
+mutex lock: a software tool for solving the critical-section problem. A process must acqure the lock before entering a critical section and releases the lock when it exits the critical section. 212
+busy waiting: when a process repeatedly checks to see if a condition is true. 213
+wastes: busy waiting ____ CPU cycles that some other process might be able to use productively. 213
+semaphore: a ____ S is an integer variable that, apart from initialization, is accessed only through two standard atomic operations; wait() and signal(). 214
+counting semaphore: the value of a ____ ____ can range over an unrestricted domain. 214
+binary semaphore: the value of a ____ ____ can range only between 0 and 1. Thus, they behave similarly to mutex locks. 214
+mutex: exclusive-member access to a resource. (StackOverflow)
+semaphore: n-member access to a resource. (StackOverflow)
+deadlock: when two or more processes are waiting indefinitely for an event that can be caused only by one of the waiting processes. 217
+indefinite blocking: when processes wait indefinitely within a semaphore. 217
+starvation: when processes wait indefinitely within a semaphore. 217
+reader writers problem: ensuring that writers have exclusive access to shared data while writing to that data. 220
+monitor: a high-level synchronization construct. 224
+abstract data type: encapsulates data with a set of functions to operate on that data that are independent of any specific implemtation of that ____. 225
+monitor type: a ____ ____ is an ADT that includes a set of programmer defined operations that are provided with mutual exclusion within the monitor. 225
+monitor: a synchronization construct that allows threads to have both mutual exclusion and the ability to wait (block) for a certain condition to become true. (wiki)

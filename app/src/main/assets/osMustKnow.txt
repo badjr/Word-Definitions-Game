@@ -1,0 +1,5 @@
+kernel: a common definition that the book usually follows is that the operating system is the one program running at all times on the computer, usually called the ____. 6
+kernel: a computer program that manages I/O requests from software and translates them into data processing instructions for the CPU or other electronic components of a computer. (wiki)
+operating system: a computer program that manages a computer's hardware. it acts as an intermediary between the user of a computer and the computer hardware. 1
+race condition: a situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the particular order in which the access takes place. 205
+cache: a component that transparently stores data so that future requests for that data can be served faster. (wiki)

@@ -1,0 +1,52 @@
+vaporware: many systems are so hard to understand, even during their development phase, that they are never finished; these are called _____. 5
+modeling: software engineering is a ____ activity. SEs deal with complexity through ____, by focusing at any one time on only the relevant details and ignoring everything else. In the course of development, software engineers build many different models of the system and of the application domain. 5
+problem solving: software engineering is a ____ activity. Models are used to search for an acceptable solution. This search is driven by experimentation. 5
+knowledge acquisition: software engineering is a ____ activity. In modeling the application and solution domain, software engineers collect data, organize it into information, and formalize it into knowledge. 6
+rationale driven: software engineering is a ____ activity. When acquiring knowledge and making decisions about the system or its application domain, software engineers also need to capture the context in which decisions were made and the rationale behind these decisions. 6
+model: a ____ is an abstract representation of a system that enables us to answer questions about the system. 6
+application domain: the ____ ____ is first modeled as a set of objects and relationships. This model is then used by the system to represent the real-world concepts it manipulates. 7
+solution domain: the ___ ___ is the set of lines used to depict a train or a financial transaction. 7
+five: the engineering method includes ____ steps; formulate the problem, analyze the problem, search for solutions, decide on the appropriate solution, specify the solution. 8
+nonlinear: knowledge acquisition is a ____ process. The addition of a new piece of information may invalidate all the knowledge we have acquired for the understanding of a system. 9
+rationale: it is necessary to capture and understand the context in which each design decision was made. This addition knowledge is called the ____ of the system. 10
+participants: all the persons involved in a project are called ____. 11
+role: a set of responsibilities in the project or the system is the ____. 11
+task: a role is associated with a set of ____ and is assigned to a participant. the same participant can fill multiple ____s. 11
+system: ____ is the collection of interconnected parts. 12
+model: ____ can refer to any abstraction of the system. 12
+work project: a ___ ___ is an artifact that is produced during the development, such as a document or a piece of software for other developers or for the client. 13
+internal: an ____ work project is a work product that must be delivered to a client as deliverable. 13
+activity: an ____ is a set of tasks that is performed toward a specific purpose. 13
+phase: an activity, sometimes called a ____, is a set of tasks that is performed toward a specific purpose. 13
+task: a ____ represents an atomic unit of work that can be managed. 14
+resources: ____ are assets that are used to accomplish work. ____ include time, equipment, and labor. 13
+functional: a ____ requirement is a specification of a function that the system must support. 14
+nonfunctional: a ____ requirement is a constraint on the operation of the system that is not related directly to a function of the system. 14
+functional: "The user must be able to purchase tickets" is a ____ requirement. 14
+functional: "The user must be able to access tariff information" is a ____ requirement. 14
+nonfunctional: "The colors used in the interface should be consisten with the company" is a ____ requirement. 15
+nonfunctional: using a specific hardware platform for the system is a ____ requirement. 15
+nonfunctional: security requirements is a ____ requirement. 15
+nonfunctional: how the system should deal with failures and faults is a ____ requirement. 15
+nonfunctional: how to provide backward compatibility with an old system that the client is unwilling to retire is a ____ requirement. 15
+notation: a ____ is a graphical or textual set of rules for representing a model. 15
+UML: ___ is a notation for representing object-oriented models. 15
+method: a ____ is a repeatable technique that specifies the steps involved in solving a specific problem. 15
+methodology: a collection of methods for solving a class of problems and specifies how and when each method should be used. 15
+Object Modeling Technique: OML stands for ___ ___ ___. 15
+OMT: ___ provides methods for three activities; analysis, focusing on formalizing the system requirements into an object model, system design, focusing on strategic decisions, and object design, which transforms the analysis model into an object model that can be implemented. 15
+Requirements Elicitation: ____ ____, one of the SE development activities associated with OO SE, is when the client/developers define the purpose of the system. 16
+actor: an ____ represents the external entitiy that interacts with the system. 16
+actor: ____s include roles such as end users, other computers the system needs to deal with (eg a central bank computer, a network), and the environment (eg a chemical process). 16
+use case: a ___ ___ is a general sequence of events that describe all possible actions between an actor and the system for a given piece of functionality. 16
+analysis: ____, one of the SE development activities associated with OO SE, is when developers aim to produce a model of the system that is correct, complete, consisten, and unambiguous. 16
+analysis: during ____, developers transform the use cases produced during requirements elicitation into an object model that completely describes the system. 16
+system design: ____ ____, one of the SE development activities associated with OO SE, is when developers define the design goals of the project and decompose the system into smaller subsystems that can be realized by individual teams. 19
+system design: in ____ ____, developers also select strategies for building the system, such as the hardware/software platform on which the system will run, the persistent data management strategy, the global control flow, the access control polocy, and the handling of boundary conditions. 19
+object design: ____ ____, one of the SE development activities associated with OO SE, is when developers define solution domain objects to bridge the gap between the analysis model and the hardware/software platform defined during system design. 19
+object design: in ____ ____, developers precisely describe the object and subsystem interfaces, selecting off-the-shelf components, restructuring the object model to attain design goals such as extensibility or understandability, and optimizing the object model for performance. 19
+implementation: ____, one of the SE development activities associated with OO SE, developers translate the solution domain model into source code. This includes implementing the attributes and methods of each object and integrating all the objects such that they function as a single system. 20
+testing: in ____, one of the SE development activities associated with OO SE, developers find differences between the system and its models by executing the system (or parts of it) with sample input data sets. 20
+management: Communication, rationale management, software configuration management, project management, and software life cycle are examples of ____ activities. 21
+rationale: given a decision, its ____ includes the problem that is addresses, the alternatives that developers considered, the criteria that developers used to evaluate the alternatives, the debate developers went through to achieve consensus, and the decision. 22
+rationale: ____ is the most important information developers need when changing the system. 22

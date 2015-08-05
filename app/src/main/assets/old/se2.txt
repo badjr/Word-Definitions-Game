@@ -1,0 +1,9 @@
+functional model: the ____ ____, represented in UML with use case diagrams, describes the functionality of the system from the user's point of view. 30
+object model: the ____ ____, represented in UML with class diagrams, describes the structure of the system in terms of objects, attributes, associations, and operations. 30
+dynamic model: the ____ ____, represented in UML with interaction diagrams, state machine diagrams, and activity diagrams, describes the internal behagvior of the system. 30
+use case: a ___ ___ is a general sequence of events that describe all possible actions between an actor and the system for a given piece of functionality. 16
+use case: a ____ ____ describes a function provided by the system that yields a visible result for an actor. 31
+actor: An ___ describes any entity that interacts with the system (eg a user, another system, the system's physical environment). 31
+boundary: the ____ of a system differentiates the tasks accomplished by the system and the tasks accomplished by its environment. 31
+outside: actors are ____ the boundary of the system. 31
+inside: use cases are ____ the boundary of the system. 31

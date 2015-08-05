@@ -1,0 +1,26 @@
+response problem: the diffucult problem of making sure that the embedded system reacts rapidly to external events, even if it is in the middle of doing something else. 81
+interrupt: cause the microprocessor in the embedded system to suspend doing whatever it is doing and to execute some different code instead, code that will respond to whatever event caused the interrupt. 81
+assembly language: the human-readable form of the instructions that the microprocessor really knows how to do
+assembler: a program called an ____ translates the assembly language into binary numbers before the microprocessor can execute them, but each assembly-language instruction turns into just one instruction for the microprocessor. 82
+registers: the typical microprocessor has within it a set of ____, each of which can hold a value that the processor is working with. 82
+program counter: every microprocessor has a ____ ____, which keeps track of the address of the next instruction that the microprocessor is to execute. 82
+stack pointer: most microprocessors have a ____ ____, which stores the memory address of the top of the general purpose microprocessor stack. 82
+accumulator: some microprocessors can only do arithmetic in a special register called the ____. 83
+jump: assembly languages have a ____ instruction that unconditionally continues execution at the instruction whose label matches the one found in the ____ instruction. 83
+conditional jump: assembly languages contain ____ ____ instructions, instructions that jump if a certain condition is true. 83
+hardware: interrupts start with a signal from the ____. 85
+interrupt request: the hardware engineer attaches a pin to an input pin on the microprocessor called an ____ ____, that lets the microprocessor know that some other chip in the circuit wants help. 86
+interrupt routine: when the microprocessor detects that a signal attached to one of its interrupt request pins is asserted, it stops executing the sequence of instructions it was executing, saves on the stack the address of the instruction that would have been next, and jumps to an ____ ____. 86
+interrupt routines: subroutines that you write, subroutines that do whatever needs to be done when the interrupt signal occurs. 86
+task code: any code that is not part of an interrupt routine. 87
+saving: pushing all of the registers at the beginning of an interrupt routine is known as ____ the context. 88
+restoring: popping all of the registers at the end of an interrupt routine is known as ____ the context. 88
+nonmaskable interrupt: most microprocessor have a ____ ____, an input pin that causes an interrupt that cannot be disabled. 89
+interrupt vectors: some microprocessors have a table somewhere in memory called ____ ____, the addresses of the interrupt routines. 90
+interrupt vector table: when an interrupt occurs, the microprocessor will look up the address of the interrupt routine in this ____ ____ ____. 90
+interrupt nesting: can an interrupt request signal interrupt another interrupt routine? on most microprocessors, yes. On some microprocessors it is the default behavior; on others, you have to put an instruction or two into your interrupt routines to allow this ____ ____. 90
+shared data problem:  92
+atomic: a part of a program is this if it cannot be interrupted. 97
+critical section: a set of instructions that must be atomic for the system to work properly is often called this. 98
+volatile: the ____ keyword, part of the C standard, allows you to warn your compiler that certain variables may change because of interrupt routines or other things the compiler doesn't know about. 103
+interrupt latency: the amount of time it takes a system to respond to an interrupt. 104

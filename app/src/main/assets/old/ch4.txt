@@ -1,0 +1,27 @@
+RTL: ____ is register transfer language
+microoperations: the operations executed on data stored in registers are called ____. 105
+microoperation: a ____ is an elementary operation performed on the information stored in one or more registers. 105
+microoperations: examples of ____ are shift, count, clear, and load. 105
+register transfer language: the symbolic notation used to describe the microoperation transfers among registers is called a ____ ____ ____. 106
+registers: Computer ____ are designated by capital letters (sometimes followed by numerals) to denote the function of the register. 107
+MAR: the register that holds an address for the memory unit is usually called a memory address register and is designated by the name ____. 107
+PC: the register for the program counter is called ____. 107
+IR: the register for the instruction register is called ____. 107
+R1: the register for the processor register is called ____. 107
+control: Normally, we want the transfer to occur only under a predetermined control condition. This can be shown by means of an if-then statement. If (P = 1) then (R2 <- R1), where P is a control signal generated in the control section. 107
+control function: a ___ ___ is a Boolean variable that is equal to 1 or 0. 108
+control function: the ____ ____ is included in the statement as follows; P: R2 <- R1. The control condition is terminated with a colon. It symbolizes the req. that the transfer operation be executed by the hardware only if P = 1. 108
+common bus: an efficient scheme for transferring info between registers in a multiple-register configuration is a ____ ____ system. A bus structure consists of a set of common lines, one for each bit of a register, through which binary information is tranferred one at a time. 109
+M: a memory word is symbolized by the letter ____. 113
+brackets: It is necessary to specify the address of M when writing memory transfer operations. This will be doe by enclosing the address in square ____ following the letter M. 113
+AR: a memory unit that receives thea address from a register, called the address register, is symbolized by ____. 113
+DR: the data from the address register (AR) are transferred to another register, called the data register, symbolized by ____. 113
+Read; DR <- M[AR]: The read operation can be stated as ____. This causes a transfer of information into DR from the memory word M selected by the address in AR. 113
+full adder: to implement the add microoperation with hardware, we need the registers that hold the data and the digital component that performs the arithmetic addition. The digital circuit that forms the arithmetic sum of two bits and a previous carry is called a ____ ____. 114
+binary adder: the digital circuit that generates the arithmetic sum of two binary numbers of any length is called a ____ ____. 114
+T: T/F, an n-bit binary adder requires n full-adders. 115
+logical: a ____ shift is one that transfers 0 through the serial input. 125
+circular: a ____ shift is one that circulates the bits of the reigster around the two ends without loss of information. 125
+arithmetic: a ____ shift is one that shifts a signed binary number to the left or right. 125
+multiplies: an arithmetic shift-left ____ a signed binary number by 2. 125
+divies: an arithmetic shift-right divides the number by 2. 125

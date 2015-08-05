@@ -1,0 +1,8 @@
+operating system: software that manages the computer hardware, as well as providing an environment for application programs to run.
+main memory: to execute programs, the programs must be in the computer's ____
+multiprocessor: ____ systems contain two or more processors that share physical memory and peripheral devices.
+multiprogramming: to best utilize the CPU, modern operating systems employ multiprogramming, which allows several jobs to be in memory at the same time, thus ensuring that the CPU always has a job to execute.
+kernel: to prevent user programs from interfering with the proper operation of the system, the hardware has two modes; user mode and kernel mode.
+kernel: various instructions (such as I/O instructions and halt instructions) are privileged and can be executed only in ____ mode.
+timer: a ____ interrupt prevents infinite loops in the operating system.
+process: a ____ (or job) is a the fundamental unit of work in an operating system.

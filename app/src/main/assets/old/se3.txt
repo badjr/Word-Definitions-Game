@@ -1,0 +1,4 @@
+client: the ____ is responsible for the formulation of scenarios and the requirements. 88
+end user: the ____ is the person who will be using the delivered system. 88
+task: a ____ is a well-defined work assignment for a role. 88
+activity: groups of related tasks are called ____. 88

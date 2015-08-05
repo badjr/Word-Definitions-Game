@@ -1,0 +1,18 @@
+control: registers contain either data or _____ information 80
+control: ____ information is a bit or a group of bits used to specify the sequence of command signals needed for manipulation of the data in other registers 80
+flip flop: a ___ ___ is a two-state device that can store only 1's and 0's 80
+radix: the base of a number system is also called the ____ 81
+numbers: numbers are represented by a string of digit symbols. 81
+T: T/F, the conversion from and to binary, octal, and hexadecimal representation plays an important part in digital computers. 82
+three four: since 2^3 = 8 and 2^4 = 16, each octal digit corresponds to three binary digits and each hexadecimal digit corresponds to four binary digits. 82
+three: to convert from binary to octal, you partition the binary number into groups of ____ bits each. 82
+same: the binary-coded octal and hexadecimal numbers are the ____ as their binary number equivalent. 84
+binary code: a ___ ___ is a group of n bits that assume up to 2^n distinct combinations of 1's and 0's w/ each combinatino representing one element of the set that is being coded. 85
+r r-1: there are two types of complements for each base r system; the ____'s complement and the _____'s complement. 87
+left off page 90
+mantissa: the floating-point representation of a number has two parts. The first part represents a signed, fixed-point number called the ____. 96
+exponent: the floating-point representation of a number has two parts. The secpmd [art designates the position of the decimal (or binary) point and is called the ____. 96
+fraction integer: the fixed-point mantissa may be a ____ or an ____. 96
+right: the value of the exponent indicates that the actual position of the decimal point is (that value) to the ____ of the indicated decimal point in the fraction. 96
+m*r^e: floating-point is always interpreted to represent a number in the form ____. 96
+normalized: a floating-point number is said to be ____ if the most significant digit of the mantissa is nonzero.

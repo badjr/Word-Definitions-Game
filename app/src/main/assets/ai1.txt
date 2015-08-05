@@ -1,0 +1,21 @@
+intelligence:  1
+artificial intelligence:  1
+rationality: an ideal performance measure. a system is rational if it does the right thing given what it knows 1
+turing test: designed to provide a satisfactory operational definition of intelligence. a computer passes the test if a human interrogator, after posing some written questions, cannot tell if the responses come from a person or a computer. 2
+turing test: for a computer to pass the ____, it needs to possess the following capabilities; natural language processing, knowledge representation, automated reasoning, and machine learning. 2
+total turing test: for a computer to to pass the ____, it needs computer vision and robotics. 3
+cognitive science: an interdisciplinary field that brings together computer models from AI and experimental techniques from psychology to construct precise and testable theories of the human mind. 3
+syllogism: an instance of a form of reasoning in which a conclusion is drawn (right or not) from two given/assumed propositions (premises), each of which shares a term with the conclusion, and shares a common or middle term not present in the conclusion. 4
+logic: laws of thought governing the operation of the mind. 4
+logicist: builds programs that can solve any problem described in logical notation. 4
+agent: something that acts. Comes from the Latin agere, to do. 4
+rational agent: one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome. 4
+limited rationality: acting appropriately when there is not enough time to do all the computation one might like. 5
+rationalism: the power of reasoning in understanding the world 6
+dualism: the idea that there is a part of the human mind (soul/spirit) that is outside of nature, exempt from physical laws. 6
+materialism: the idea that the brain's operation according to the laws of physics constitutes the mind. 6
+empiricism: a theory of knowledge which states that knowledge comes only or primarily from sensory experience. 6
+induction: principle that general rules are acquired by exposure to repeated associations between their elements. 6
+algorithm: the word ____ comes from al-Khowarazmi, a Persian mathematician of the 9th century, whose writings also introduced Arabic numerals and algebra to Europe. 8
+incompleteness theorem: the ____ showed that in any formal theory as strong as Peano arithmetic (the elementary theory of natural numbers), there are true statements that are undecidable in the sense that they have no proof within the theory. 8
+decision theory: combines probability theory with utility theory, provides a formal and complete framework for decisions (economic or otherwise) made under uncertainty. 9

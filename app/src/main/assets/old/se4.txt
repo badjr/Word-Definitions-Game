@@ -1,0 +1,3 @@
+requirements elicitation: ____ focuses on describing the purpose of the system. 123
+scenario: a ____ is an instance of a use case. 135
+use case: a ____ specifies all possible scenarios for a given piece of functionality. 135

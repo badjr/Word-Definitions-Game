@@ -1,0 +1,70 @@
+microcontroller: some people use the term ____ for the very small end of the range of available microprocessors, which are small, slow microprocessor with some RAM and some ROM built in, and a collection of pins that can be set high or low or sensed directly by the software. 46
+address bus: the address signals as a group are often referred to as the ____ ____. 47
+data bus: the data signals as a group are often referred to as the ____ ____. 47
+microprocessor bus: the combination of the address bus and data bus and perhaps the read and write signals from the process are called the ____ ____. 47
+memory mapping: assigning address ranges to devices connected to a microprocessor is known as ____. 50
+two: some microprocessors allow an alternative mechanism to memory mapping because they support ____ address spaces; the memory address space, and an I/O address space. 51
+MOVE: this instruction in assembly language reads from or writes to memory. 51
+IN OUT: this instruction in assembly language accesses devices in the I/O address space. 51
+bus cycle: ROM and RAM have various timing requirements; the address lines must stay stable for a certain period of time, and the read enable and chip enable lines must be asserted for some period of time; only then will the data be valid on the bus. The microprocessor is in control of all of these signals, and it decides when to look for data on the bus. This entire process is called a ____ ____. 53
+bus handshaking: for a circuit to work, the signals that the microprocessor produces must conform to the requirements of the other parts in the circuit. The various mechanism by which this can be accomplished are referred to collectively as ____ ____. 53
+wait signal: if a device cannot respond quickly to a bus cycle, it can assert a ____ ____ to make the microprocessor extend the bus cycle. 55
+wait state: an extra clock cycle inserted with the regular clock cycles that extends a bus cycle. 56
+wait state generator: if a microprocessor is capable of using wait states, then it will be able to insert extra clock cycles. this piece of circuitry inside the microprocessor is responsible for this. 56
+slow: most microprocessors allow you to use different numbers of wait states for different parts of the address space. this is useful because some devices are much faster than others; RAM, for example, is typically faster than ROM; I/O devices tend to be ____. 56
+direct memory access: one way to get data into and out of systems quickly is to use this. 57
+direct memory access: circuitry that can read data from an I/O device, such as a serial port or a network, and then write it into memory or read from memory and write to an I/O device, all without software assistance and the associated overhead. 57
+edge triggered: means that a DMA will transfer a byte whenever it sees a rising edge on DMAREQ. 59
+level triggered: means that a DMA will transfer bytes as long as DMAREQ remains high. 59
+interrupt routine: when the microprocessor is interrupted, it executes this other piece of software. 61
+interrupt request: the signal that tells the microprocessor that it is time to run the interrupt routine. 61
+Universal Asynchronous Receiver/Transmitter: a common device on many systems whose purpose is to convert data to and from a serial interface, that is, an interface on which the bits that make up the data are sent one after another. 62
+UART: a common device on many systems whose purpose is to convert data to and from a serial interface, that is, an interface on which the bits that make up the data are sent one after another. 62
+serial interface: an interface on which the bits that make up the data are sent one after another. 62
+register: a typical UART, in common with many other I/O devices, has a handful of internal locations for data, usually called ____, to which the microprocessor can write to control behavior of the UART and to send it data to be transmitted and from which the microprocessor can read to retrieve data that the UART has received. 64
+writes: a typical register you might find in a UART, in which the microprocessor ____ bytes to be transmitted. 64
+reads: a typical register you might find in a UART, in which the microprocessor ____ received bytes. 64
+error: a typical register you might find in a UART, consisting of a collection of bits that indicate any ____ conditions on received characters (bad parity, bad framing, etc.). 64
+interrupt: a typical register you might find in a UART, the one the microprocessor writes to tell the UART when to ____. 64
+interrupted: a typical register you might find in a UART, the one that the microprocessor can read to find out why the UART ____. 64
+outgoing: a typical register you might find in a UART, the one the microprocessor can write to control the values of request-to-send and other ____ signals. 64
+data rate: (a) typical register(s) you might find in a UART, the on the microprocessor writes to indicate the ____ ____. 64
+glue: this circuitry connects outputs that assert high to inputs that assert low, drives chip-enable signals appropriately based on the address signals, and so on. 65
+PLD: a common part in embedded systems. These devices allow you to build more or less any small glue circuit you want, even if what you want includes three-input NAND gates in which two of the inputs are inverted. 65
+Programmable Logic Device: a common part in embedded systems. These devices allow you to build more or less any small glue circuit you want, even if what you want includes three-input NAND gates in which two of the inputs are inverted. 65
+PAL: the smallest of the PLDs have 10 to 20 pins and an array of gates that you can hook up after you buy them; these parts are called ____. They have a rather large collection of discrete parts in it and a method by which you can rearrange the connections among these parts in between the parts and pins. 65
+Programmable Array Logic: the smallest of the PLDs have 10 to 20 pins and an array of gates that you can hook up after you buy them; these parts are called ____. They have a rather large collection of discrete parts in it and a method by which you can rearrange the connections among these parts in between the parts and pins. 65
+parts: Application-Specific Integrated Circuits (ASICs) and Field-Programmable Gate Arrays are increasingly popular because they are an economical way to create custom, complex hardware on a circuit without adding a lot of ____. 70
+ASIC: a common part in embedded systems. an integrated circuit built specially to go into the circuit for which it is designed. In theory, it can contain whatever the hardware engineer wants, but in practice they consist of a core of some kind, typically a microprocessor, plus perhaps some modest peripherals and all of the glue necessary to hold the circuit together. 70
+Application-Specific Integrated Circuit: a common part in embedded systems. an integrated circuit built specially to go into the circuit for which it is designed. In theory, it can contain whatever the hardware engineer wants, but in practice they consist of a core of some kind, typically a microprocessor, plus perhaps some modest peripherals and all of the glue necessary to hold the circuit together. 70
+FPGA: a common part in embedded systems. like a large PAL, in that it has a large number of gates in it, and the connections among them can be progarmmed after the part has been manufactured. 71
+Field-Programmable Gate Array: a common part in embedded systems. like a large PAL, in that it has a large number of gates in it, and the connections among them can be progarmmed after the part has been manufactured. 71
+watchdog timer: a common part in embedded systems. contains a timer that expires after a certain interval unless it is restarted. 71
+auxiliary circuits: microprocessors for embedded systems usually come with these built into them. They are usually logically separate from the microprocessor, they're just built on the same piece of silicon and then wired directly to the microprocessor. The advantage of these built-ins is that you get them in your system without having to add extra parts. 72
+peripheral: each auxiliary circuit, or ____, is controlled by writing values to a small collection of registers that typically appear at some fixed locations in the microprocessor's address space. 72
+timer: a common built-in for a microprocessor. it's essentially just a counter that counts the number of microprocessor clock cycles and then causes an interrupt when the count expires. 72
+pre-scaler: a ____ divides the microprocessor clock signal by some constant, perhaps 20, before the signal gets to the timer. 72
+DMA: a common built-in for a microprocessor. since a ____ channel and the microprocessor content for the bus, certain processes are simplified if they're on the same chip. 73
+I/O pins: a common built-in for a microprocessor. these can be configured as outputs that software can set high or low directly, usually by writing to a register, or they can be configured as inputs that software can read, again usually by reading from a register. 73
+address decoder: a common built-in for a microprocessor. using an address to generate chip enables for the RAM, ROM, and various peripheral chips can be a nuisance. Some microprocessors offer to do some of that ____ ____ for you by having a handful of chip enable output pins that can be connected directly to the other chips. 74
+memory cache: a common built-in for a microprocessor. small, but extremely fast memories that the microprocessor uses to speed up its work. 74
+cache: the microprocessor endeavors to keep in its ____ the data and instructions it is about to need; the microprocessor can fetch items that happen to be in the ____ when they are needed much more quickly that it can fetch items from separate memory chips. 74
+cache: a component that transparently stores data so that future requests for that data can be served faster. (wiki)
+instruction pipeline: a common built-in for a microprocessor. similar to a memory cache in that the microprocessor endeavors to load into it the pipeline instructions that it will need later, so that they will be ready for execution more rapidly than if they must be fetched from separate memory chips. 75
+connector: a place where we can connect a circuit to external devices. 75
+jumper: a place on the circuit where a customer is expected to connect signals together or not, depending on how that customer wants to user the circuit. 75
+microprocessor: typically, these have at least a collection of address pins, a collection of data pins, one or more clock pins, a read pin, and a write pin. 78
+bus: the collection of data, address, and control signals that run among the microprocessor, the ROM, and the RAM. 78
+wait state: the electrical engineer must ensure that the timing requirements of each of the parts attached to the bus are satisfied, a ____ ____ can be used for this. 78
+wait line: the electrical engineer must ensure that the timing requirements of each of the parts attached to the bus are satisfied, a ____ ____ can be used for this. 78
+direct memory access: these circuits move data directly from I/O devices to memory and vice versa without microprocessor intervention. 79
+interrupt: when an I/O device needs attention from the microprocessor, it asserts its ____ signal to let the microprocessor know. 79
+Universal Asynchronous Receiver/Transmitter: converts data between an eight-bit format and the one-bit-at-a-time format used on serial ports such as RS-232 ports. They're controlled by the microprocessor through a collection of registers. 79
+UART: converts data between an eight-bit format and the one-bit-at-a-time format used on serial ports such as RS-232 ports. They're controlled by the microprocessor through a collection of registers. 79
+Programmable Array Logic: the simplest form of programmable logic device (PLD). Contains a collection of gates; you can rearrange the connections among these gates with a special programming language and a ____ programmer. 79
+PAL: the simplest form of programmable logic device (PLD). Contains a collection of gates; you can rearrange the connections among these gates with a special programming language and a ____ programmer. 79
+Application Specific Integrated Circuit: a part built especially for a given product. 79
+ASIC: a part built especially for a given product. 79
+watchdog timer: resets the microprocessor and starts the software over from the beginning if the software does not restart it periodically. 79
+T: T/F, typical modern microprocessor intended for embedded systems have built-in timers, DMA, I/O pins, address decoding, and memory caches. 79
+T: T/F, in addition to making their circuits work, hardware engineers must deal with concerns about cost, power, and heat. 79
